@@ -1,0 +1,312 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_dummy_load_pcb-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C CA?
+U 1 1 5A680F68
+P 3500 2950
+F 0 "CA?" H 3525 3050 50  0000 L CNN
+F 1 "10uF" H 3525 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3538 2800 50  0001 C CNN
+F 3 "" H 3500 2950 50  0001 C CNN
+	1    3500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP73826 UA?
+U 1 1 5A680F6F
+P 4800 3300
+F 0 "UA?" H 4800 3050 60  0000 C CNN
+F 1 "MCP73826" H 4800 3550 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 4650 3300 60  0001 C CNN
+F 3 "" H 4650 3300 60  0001 C CNN
+	1    4800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A680F76
+P 5600 3750
+F 0 "#PWR?" H 5600 3500 50  0001 C CNN
+F 1 "GND" H 5600 3600 50  0000 C CNN
+F 2 "" H 5600 3750 50  0001 C CNN
+F 3 "" H 5600 3750 50  0001 C CNN
+	1    5600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R RA?
+U 1 1 5A680F7C
+P 4100 2700
+F 0 "RA?" V 4180 2700 50  0000 C CNN
+F 1 "50m" V 4100 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_2512_HandSoldering" V 4030 2700 50  0001 C CNN
+F 3 "" H 4100 2700 50  0001 C CNN
+	1    4100 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L IRF9540N QA?
+U 1 1 5A680F83
+P 5300 2800
+F 0 "QA?" V 5650 2750 50  0000 L CNN
+F 1 "IPP45P03P4L-11" V 5550 2500 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5550 2725 50  0001 L CIN
+F 3 "" H 5300 2800 50  0001 L CNN
+	1    5300 2800
+	0    1    -1   0   
+$EndComp
+$Comp
+L R RA?
+U 1 1 5A680F8A
+P 5050 3700
+F 0 "RA?" V 5130 3700 50  0000 C CNN
+F 1 "47k" V 5050 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4980 3700 50  0001 C CNN
+F 3 "" H 5050 3700 50  0001 C CNN
+	1    5050 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5A680F91
+P 3900 2600
+F 0 "#PWR?" H 3900 2450 50  0001 C CNN
+F 1 "+5V" H 3900 2740 50  0000 C CNN
+F 2 "" H 3900 2600 50  0001 C CNN
+F 3 "" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C CA?
+U 1 1 5A680F97
+P 5600 3500
+F 0 "CA?" H 5625 3600 50  0000 L CNN
+F 1 "10uF" H 5625 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5638 3350 50  0001 C CNN
+F 3 "" H 5600 3500 50  0001 C CNN
+	1    5600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A680F9E
+P 3500 3200
+F 0 "#PWR?" H 3500 2950 50  0001 C CNN
+F 1 "GND" H 3500 3050 50  0000 C CNN
+F 2 "" H 3500 3200 50  0001 C CNN
+F 3 "" H 3500 3200 50  0001 C CNN
+	1    3500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3450 5300 3700
+Wire Wire Line
+	5300 3150 5300 3000
+Wire Wire Line
+	4250 2700 5100 2700
+Wire Wire Line
+	4300 3150 4300 2700
+Connection ~ 4300 2700
+Wire Wire Line
+	3150 3450 4300 3450
+Wire Wire Line
+	2650 2700 3950 2700
+Wire Wire Line
+	5600 2700 5600 3350
+Wire Wire Line
+	5600 3300 5300 3300
+Connection ~ 5600 2700
+Connection ~ 5600 3300
+Wire Wire Line
+	5600 3650 5600 3750
+Wire Wire Line
+	5200 3700 6300 3700
+Connection ~ 5600 3700
+Connection ~ 3900 2700
+Connection ~ 5300 3700
+Wire Wire Line
+	4900 3700 4100 3700
+Wire Wire Line
+	4100 3700 4100 3450
+Connection ~ 4100 3450
+Wire Wire Line
+	3500 2800 3500 2700
+Wire Wire Line
+	3500 3100 3500 3200
+Wire Wire Line
+	3900 2600 3900 3300
+Wire Wire Line
+	3900 3300 4300 3300
+$Comp
+L Battery_Cell BATT?
+U 1 1 5A681A3E
+P 6300 3350
+F 0 "BATT?" H 6400 3450 50  0000 L CNN
+F 1 "Battery_Cell" H 6400 3350 50  0000 L CNN
+F 2 "Library:18650" V 6300 3410 50  0001 C CNN
+F 3 "" V 6300 3410 50  0001 C CNN
+	1    6300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2700 6300 3150
+Wire Wire Line
+	5500 2700 6300 2700
+Wire Wire Line
+	6300 3700 6300 3450
+$Comp
+L Barrel_Jack J1
+U 1 1 59F3A480
+P 2550 1250
+F 0 "J1" H 2550 1460 50  0000 C CNN
+F 1 "Barrel_Jack" H 2550 1075 50  0000 C CNN
+F 2 "Library:CUI-PJ-002AH-SMT_dc-barrel-jack" H 2600 1210 50  0001 C CNN
+F 3 "" H 2600 1210 50  0001 C CNN
+	1    2550 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR01
+U 1 1 59F3D7A4
+P 3000 1100
+F 0 "#PWR01" H 3000 950 50  0001 C CNN
+F 1 "+9V" H 3000 1240 50  0000 C CNN
+F 2 "" H 3000 1100 50  0001 C CNN
+F 3 "" H 3000 1100 50  0001 C CNN
+	1    3000 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 59F4A78A
+P 4200 1050
+F 0 "#PWR02" H 4200 900 50  0001 C CNN
+F 1 "+5V" H 4200 1190 50  0000 C CNN
+F 2 "" H 4200 1050 50  0001 C CNN
+F 3 "" H 4200 1050 50  0001 C CNN
+	1    4200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L REG REG1
+U 1 1 5A04C5D0
+P 3650 1250
+F 0 "REG1" H 3650 1000 60  0000 C CNN
+F 1 "REG" H 3650 1500 60  0000 C CNN
+F 2 "Library:LM2596_module" H 3600 1250 60  0001 C CNN
+F 3 "" H 3600 1250 60  0001 C CNN
+	1    3650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59FD1D7D
+P 4200 1450
+F 0 "#PWR08" H 4200 1200 50  0001 C CNN
+F 1 "GND" H 4200 1300 50  0000 C CNN
+F 2 "" H 4200 1450 50  0001 C CNN
+F 3 "" H 4200 1450 50  0001 C CNN
+	1    4200 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 1150
+Wire Wire Line
+	4200 1350 4200 1450
+Wire Wire Line
+	4200 1050 4200 1150
+Wire Wire Line
+	2850 1150 3100 1150
+Wire Wire Line
+	2850 1350 3100 1350
+Wire Wire Line
+	3000 1150 3000 1100
+Wire Wire Line
+	3000 1250 2850 1250
+Wire Wire Line
+	3000 1250 3000 1350
+Connection ~ 3000 1350
+$Comp
+L USB_OTG J?
+U 1 1 5A68266C
+P 2350 3000
+F 0 "J?" H 2150 3450 50  0000 L CNN
+F 1 "USB_OTG" H 2150 3350 50  0000 L CNN
+F 2 "" H 2500 2950 50  0001 C CNN
+F 3 "" H 2500 2950 50  0001 C CNN
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2800 2650 2700
+Connection ~ 3500 2700
+Wire Wire Line
+	2250 3400 2650 3400
+Wire Wire Line
+	2650 3400 2650 3200
+$Comp
+L GND #PWR?
+U 1 1 5A682768
+P 2350 3550
+F 0 "#PWR?" H 2350 3300 50  0001 C CNN
+F 1 "GND" H 2350 3400 50  0000 C CNN
+F 2 "" H 2350 3550 50  0001 C CNN
+F 3 "" H 2350 3550 50  0001 C CNN
+	1    2350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3550 2350 3400
+Connection ~ 2350 3400
+Wire Wire Line
+	2650 3100 2650 3000
+Wire Wire Line
+	3150 3450 3150 2700
+Connection ~ 3150 2700
+$EndSCHEMATC
